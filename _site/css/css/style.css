@@ -5951,6 +5951,31 @@ body {
 
   padding: 0 0 200px;
 }
+/* Set the fixed height of the footer here */
+#footer {
+  height: 200px;
+  background-color: #3fdd82;
+}
+.navbar-default,
+.navbar-brand,
+.navbar-header {
+  font-family: Lato;
+  font-weight: 700;
+  background-color: none;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #252525;
+}
+.navbar-default .navbar-nav > a {
+  color: #252525;
+  background-color: transparent;
+}
+.navbar-nav,
+.navbar,
+.navbar-static-top {
+  font-size: 32px;
+  font-weight: 300;
+}
 .slashes {
   font-weight: 800;
   font-size: 64px;
@@ -5962,7 +5987,7 @@ li:hover > a .slashesyellow {
   color: #ffd520;
 }
 li:hover > a .slashesgreen {
-  color: #38bf71;
+  color: #3fdd82;
 }
 li:hover > a .slashesblue {
   color: #677c91;
@@ -5999,39 +6024,14 @@ li:hover > a .slashesblue {
   display: inline;
   position: relative;
   vertical-align: middle;
-  color: #27ae60;
-}
-/* Set the fixed height of the footer here */
-#footer {
-  height: 200px;
-  background-color: #252525;
+  color: #2ecc71;
 }
 .navbar-default,
-.navbar-brand,
-.navbar-header {
-  font-family: Lato;
-  font-weight: 700;
-  background-color: none;
-}
-.navbar-default .navbar-nav > li > a {
-  color: #252525;
-}
-.navbar-default .navbar-nav > a {
-  color: #252525;
+.navbar-collapse,
+.navbar-default,
+.navbar-form {
   background-color: transparent;
-}
-.navbar-nav,
-.navbar,
-.navbar-static-top {
-  font-size: 32px;
-  font-weight: 300;
-}
-.slashes {
-  font-weight: 800;
-  font-size: 64px;
-  display: inline;
-  position: relative;
-  vertical-align: middle;
+  border-color: transparent;
 }
 @media (min-width: 768px) {
   .nav li {
@@ -6046,7 +6046,6 @@ li:hover > a .slashesblue {
 .navbar .navbar-default .navbar-static-top {
   padding-top: 40px;
   padding-left: 60px;
-  background-color: transparent;
 }
 .navbar-nav {
   margin-left: 60px;
@@ -6058,7 +6057,7 @@ li:hover > a .slashesblue {
   border-style: solid;
   border-width: 2px;
   border-color: transparent;
-  background-color: #252525;
+  background-color: #3fdd82;
 }
 .circle:hover,
 .circle > li > a:hover {
@@ -6076,7 +6075,7 @@ li:hover > a .slashesblue {
   line-height: .9;
 }
 #wrap {
-  max-width: 900px;
+  max-width: 1000px;
   background-color: #fdfdfd;
 }
 .main-navigation {

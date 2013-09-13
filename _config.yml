@@ -12,3 +12,5 @@ transfer:
   settings: -av
   source: _site/
   destination: ~/Git/username.github.com/
+exclude:
+  _site

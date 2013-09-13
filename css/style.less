@@ -26,20 +26,9 @@ and Blueprint http://www.blueprintcss.org/
 /* =Reset
 -------------------------------------------------------------- */
 
-@import url('bootstrap/less/mixins.less');
-@import url('bootstrap/less/bootstrap.less');
-
-// Project Colors
-@black: #252525;
-@light-black: (@black + #555);
-@ultralight-grey: rgba(242,242,242,1);
-@blue: #34495e;
-@light-blue: (#34495e + #333);
-@yellow: #f1c40f;
-@light-yellow: (@yellow + #111);
-@green: #2ecc71;
-@light-green: (@green + #111);
-@white: #FDFDFD;
+@import url('../bootstrap/less/mixins.less');
+@import url('../bootstrap/less/bootstrap.less');
+@import url('colors.less');
 
 // Sticky Footer 
 html,
@@ -60,38 +49,10 @@ body {
   /* Pad bottom by footer height */
   padding: 0 0 200px;
 }
-
-/* Set the fixed height of the footer here */
-#footer {
-  height: 200px;
-  background-color: @black;
-}
-.navbar-default,
-.navbar-brand,
-.navbar-header {
-	font-family: Lato;
-  font-weight: 700;
-	background-color: none;
-}
-.navbar-default 
-.navbar-nav > li > a {
-  color: @black;
-}
-.navbar-default .navbar-nav > a,
-{
-  color: @black;
-  background-color: transparent;
-}
-.navbar-nav, 
-.navbar, 
-.navbar-static-top {
-	font-size: 32px;
-	font-weight: 300;
-}
 .slashes {
-	font-weight: 800;
-	font-size: 64px;
-	display: inline;
+  font-weight: 800;
+  font-size: 64px;
+  display: inline;
   position: relative;
   vertical-align: middle;
 }
@@ -113,43 +74,73 @@ li:hover > a .slashesblue {
   border-bottom: 1px solid @light-black;
 }
 .slashesblue  {
-	.slashes;
-	color: @blue;
+  .slashes;
+  color: @blue;
   letter-spacing:5px;
   font-size: 58px;
 }
 .slashesyellow  {
-	.slashes;
-	color: @yellow;
-	transform:rotate(90deg);
+  .slashes;
+  color: @yellow;
+  transform:rotate(90deg);
     letter-spacing:-2px;
 }
 .slashesgreen {
-	.slashes;
-	color: @green;
+  .slashes;
+  color: @green;
 }
-.slashesgreen :hover {}
-.navbar-default, .navbar-collapse,
-.navbar-default, .navbar-form {
+/* Set the fixed height of the footer here */
+#footer {
+  height: 200px;
+  background-color: @black;
+}
+.navbar-default,
+.navbar-brand,
+.navbar-header {
+  font-family: Lato;
+  font-weight: 700;
+  background-color: none;
+}
+.navbar-default 
+.navbar-nav > li > a {
+  color: @black;
+}
+.navbar-default .navbar-nav > a,
+{
+  color: @black;
   background-color: transparent;
-  border-color: transparent;
-  }
+}
+.navbar-nav, 
+.navbar, 
+.navbar-static-top {
+  font-size: 32px;
+  font-weight: 300;
+}
+.slashes {
+  font-weight: 800;
+  font-size: 64px;
+  display: inline;
+  position: relative;
+  vertical-align: middle;
+}
+
  @media (min-width: 768px) {
 .nav li {
-	padding-top: 80px;
-	max-width: 200%;
-	text-align: center;
+  padding-top: 80px;
+  max-width: 200%;
+  text-align: center;
   }
   .navbar-nav {
-	margin-left: 100px;
+  margin-left: 100px;
 }
 }
 .navbar .navbar-default .navbar-static-top​ {
-	padding-top: 40px;
-	padding-left: 60px;
+  padding-top: 40px;
+  padding-left: 60px;
+  background-color: transparent;
 }
 .navbar-nav {
-	margin-left: 60px;
+  margin-left: 60px;
 }
 
 // Logo
@@ -177,7 +168,7 @@ li:hover > a .slashesblue {
   line-height: .9;
 }
 #wrap {
-	max-width: 1000px;
+  max-width: 900px;
   background-color: @white;
 }
 .main-navigation {
