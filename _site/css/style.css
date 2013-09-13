@@ -5936,6 +5936,7 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
+  background-color: #fdfdfd;
   /* The html and body elements cannot have any padding or margin. */
 
 }
@@ -6011,7 +6012,8 @@ li:hover > a .slashesblue {
 .navbar-header {
   font-family: Lato;
   font-weight: 700;
-  background-color: none;
+  background-color: transparent;
+  border-color: transparent;
 }
 .navbar-default .navbar-nav > li > a {
   color: #252525;
@@ -6062,7 +6064,7 @@ li:hover > a .slashesblue {
 }
 .circle:hover,
 .circle > li > a:hover {
-  background: #ffffaa url(http://www.hdwallpaperstop.com/wp-content/uploads/2013/08/Fantasy-Cityscape-Background.jpg) 0 0 no-repeat;
+  background: #7a7a7a;
 }
 .circletext {
   text-align: right;
@@ -6190,4 +6192,8 @@ li:hover > a .slashesblue {
     padding-top: 15px;
     padding-bottom: 15px;
   }
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: transparent;
 }
